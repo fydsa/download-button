@@ -7,3 +7,38 @@
   --white: #ffffff;
   --black: #000000;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 100px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+span {
+  color: var(--black);
+  font-size: 25px;
+  font-weight: bold;
+}
