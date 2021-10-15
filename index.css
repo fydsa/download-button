@@ -1,6 +1,6 @@
 :root {
   --background: #e6e8f7;
-  --hit: #ba4962;
+  --hit: #b42c4a;
   --downloading: #099177;
   --loading-border: #25e0bd;
   --done: #5a72db;
@@ -23,7 +23,7 @@ body {
   height: 100vh;
 }
 
-button {
+.download {
   position: relative;
   display: flex;
   justify-content: center;
@@ -41,4 +41,12 @@ span {
   color: var(--black);
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.hit-circle {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0.3rem solid var(--hit);
+  border-radius: 50%;
 }
