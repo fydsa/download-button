@@ -28,17 +28,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 100px;
+  width: 16rem;
+  height: 5rem;
   outline: none;
   border: none;
   cursor: pointer;
   background-color: var(--white);
-  border-radius: 15px;
+  border-radius: 1.2rem;
 }
 
 span {
   color: var(--black);
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
