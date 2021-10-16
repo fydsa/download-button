@@ -1,5 +1,7 @@
 const button = document.querySelector("button");
 
+const span_button = document.querySelector("button > span");
+
 const div_button = document.querySelector("button > div");
 
 const downloading_state = document.querySelector(".downloading");
@@ -14,9 +16,13 @@ function clickHandler() {
   setTimeout(() => {
     hit.remove();
     div_button.className = "downloading";
+    span_button.textContent = "Downloading";
+    span_button.style.color = "#ffffff";
   }, 1000);
 
   setTimeout(() => {
     div_button.classList.remove("downloading");
+    span_button.textContent = "Download";
+    span_button.style.color = "#000000";
   }, 5000);
 }
