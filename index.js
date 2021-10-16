@@ -16,7 +16,7 @@ function clickHandler() {
   setTimeout(() => {
     hit.remove();
     div_button.className = "downloading";
-    span_button.textContent = "Downloading";
+    span_button.textContent = "Loading";
     span_button.style.color = "#ffffff";
   }, 1000);
 
