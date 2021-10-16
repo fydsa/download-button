@@ -45,8 +45,45 @@ span {
 
 .hit-circle {
   position: absolute;
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 0.3rem solid var(--hit);
   border-radius: 50%;
+  animation: resize-animation 0.7s ease-in;
+}
+
+.downloading {
+  background-color: var(--downloading);
+  position: absolute;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  animation: transition 0.5s;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+@keyframes resize-animation {
+  0% {
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 0.3rem solid var(--hit);
+  }
+  50% {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 0.15rem solid var(--hit);
+  }
+  100% {
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 0.2rem solid var(--hit);
+  }
+}
+
+@keyframes transition {
+  to {
+    height: 100%;
+  }
 }
