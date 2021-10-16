@@ -58,7 +58,7 @@ span {
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
-  animation: transition 0.5s;
+  animation: transition 0.5s forwards;
   z-index: 1;
   top: 0;
   left: 0;

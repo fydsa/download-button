@@ -18,5 +18,5 @@ function clickHandler() {
 
   setTimeout(() => {
     div_button.classList.remove("downloading");
-  }, 2000);
+  }, 5000);
 }
