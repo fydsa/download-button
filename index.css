@@ -65,7 +65,7 @@ span {
   left: 0;
 }
 
-.downloading::after {
+.downloading::before {
   content: "";
   position: absolute;
   width: 0;
