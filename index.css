@@ -73,7 +73,7 @@ span {
   left: 0;
   border-radius: 0 1.2rem;
   border-bottom: 0.4rem solid var(--loading-border);
-  animation: border-transition 1.5s 1s;
+  animation: border-transition 1.5s 1s forwards;
 }
 
 @keyframes resize-animation {
