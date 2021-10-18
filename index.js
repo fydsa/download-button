@@ -25,7 +25,16 @@ function clickHandler() {
 
   setTimeout(() => {
     div_button.classList.remove("downloading");
+    div_button.className = "done";
+
+    span_button.textContent = "Done";
+    span_button.style.color = "#ffffff";
+  }, 3700);
+
+  setTimeout(() => {
+    div_button.classList.remove("done");
+
     span_button.textContent = "Download";
     span_button.style.color = "#000000";
-  }, 5000);
+  }, 8000);
 }
