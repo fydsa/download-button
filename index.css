@@ -146,3 +146,9 @@ span {
     border-radius: 1rem;
   }
 }
+
+svg {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+}
