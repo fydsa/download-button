@@ -13,7 +13,10 @@ function clickHandler() {
   button.append(hit);
   hit.className = "hit-circle";
 
+  button.style.animation = "bounce-button 0.3s";
+
   setTimeout(() => {
+    button.style.animation = "none";
     hit.remove();
     div_button.className = "downloading";
     span_button.textContent = "Loading";

@@ -73,7 +73,18 @@ span {
   left: 0;
   border-radius: 0 1rem;
   border-bottom: 0.4rem solid var(--loading-border);
-  animation: border-transition 1.5s 1s forwards;
+  animation: border-transition 1.5s 1s forwards ease-in-out;
+}
+
+@keyframes bounce-button {
+  0% {
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes resize-animation {
