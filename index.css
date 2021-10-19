@@ -136,15 +136,25 @@ svg {
     height: 1.6rem;
     border: 0.3rem solid var(--hit);
   }
+  25% {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 0.15rem solid var(--hit);
+  }
   50% {
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.2rem solid var(--hit);
+  }
+  75% {
     width: 2.3rem;
     height: 2.3rem;
     border: 0.15rem solid var(--hit);
   }
   100% {
-    width: 1.9rem;
-    height: 1.9rem;
-    border: 0.2rem solid var(--hit);
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.1rem solid var(--hit);
   }
 }
 

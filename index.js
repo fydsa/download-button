@@ -25,7 +25,7 @@ function clickHandler() {
   button.append(hit);
   hit.className = "hit-circle";
 
-  button.style.animation = "bounce-button 0.3s";
+  button.style.animation = "bounce-button 0.7s";
 
   setTimeout(() => {
     button.style.animation = "none";
@@ -39,7 +39,7 @@ function clickHandler() {
     loading_icon.style.display = "inline";
     loading_arrow.style.animation = "loading-arrow 1s ease-in-out infinite";
     span_button.style.color = "#ffffff";
-  }, 1000);
+  }, 750);
 
   setTimeout(() => {
     loading_icon.style.display = "none";
@@ -50,7 +50,6 @@ function clickHandler() {
     span_button.textContent = "Done";
     span_button.style.color = "#ffffff";
     done_icon.style.display = "inline";
-    // done_icon.style.animation = "done-icon 2s linear forwards infinite";
   }, 3700);
 
   setTimeout(() => {
