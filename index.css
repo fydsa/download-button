@@ -6,6 +6,8 @@
   --done: #5a72db;
   --white: #ffffff;
   --black: #000000;
+  --ref: #164e52;
+  --ref-hover: #2b888f;
 }
 
 * {
@@ -49,8 +51,6 @@ span {
   font-size: 1.6rem;
   font-weight: bold;
   z-index: 2;
-  /* position: absolute; */
-  /* left: 7rem; */
 }
 
 .hit-circle {
@@ -117,6 +117,22 @@ svg {
   stroke-dasharray: 250;
   stroke-dashoffset: 250;
   animation: done-icon 3s linear forwards;
+}
+
+.reference {
+  position: absolute;
+  align-self: flex-end;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: var(--ref);
+  font-size: 1.1rem;
+}
+
+a:hover {
+  color: var(--ref-hover);
 }
 
 @keyframes bounce-button {
