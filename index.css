@@ -42,6 +42,8 @@ span {
   font-size: 1.6rem;
   font-weight: bold;
   z-index: 2;
+  position: absolute;
+  /* left: 7rem; */
 }
 
 .hit-circle {
@@ -83,6 +85,12 @@ span {
   border-radius: 0 1rem;
   border-bottom: 0.4rem solid var(--loading-border);
   animation: border-transition 1.5s 1s forwards ease-in-out;
+}
+
+#loading {
+  position: absolute;
+  visibility: hidden;
+  /* left: -2rem; */
 }
 
 @keyframes bounce-button {
@@ -149,6 +157,12 @@ span {
 
 svg {
   position: absolute;
-  z-index: 3;
-  width: 50px;
+  width: 2.1rem;
+  left: 4.3rem;
+  /* padding-right: 0.4rem; */
+  /* visibility: hidden; */
+}
+
+#done {
+  visibility: hidden;
 }
