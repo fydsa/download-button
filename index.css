@@ -37,12 +37,19 @@ body {
   border-radius: 1rem;
 }
 
+.download > div:nth-child(1) {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 span {
   color: var(--black);
   font-size: 1.6rem;
   font-weight: bold;
   z-index: 2;
-  position: absolute;
+  /* position: absolute; */
   /* left: 7rem; */
 }
 
@@ -87,10 +94,23 @@ span {
   animation: border-transition 1.5s 1s forwards ease-in-out;
 }
 
-#loading {
-  position: absolute;
+svg {
+  width: 2.1rem;
+  z-index: 2;
+}
+
+#loading,
+#done {
   display: none;
+}
+
+#loading {
   stroke: var(--white);
+}
+
+#done {
+  stroke: var(--white);
+  fill: var(--white);
 }
 
 @keyframes bounce-button {
@@ -171,17 +191,4 @@ span {
     transform: translateY(0.1rem);
     opacity: 0.2;
   }
-}
-
-svg {
-  position: absolute;
-  width: 2.1rem;
-  left: 4.3rem;
-  z-index: 2;
-  /* padding-right: 0.4rem; */
-  /* visibility: hidden; */
-}
-
-#done {
-  visibility: hidden;
 }

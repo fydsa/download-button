@@ -1,8 +1,10 @@
 const button = document.querySelector("button");
 
-const span_button = document.querySelector("button > span");
+const span_button = document.querySelector("button > div:nth-child(1) > span");
 
-const div_button = document.querySelector("button > div");
+const div_button_first = document.querySelector("button > div:nth-child(1)");
+
+const div_button = document.querySelector("button > div:nth-child(2)");
 
 const downloading_state = document.querySelector(".downloading");
 
@@ -11,6 +13,10 @@ const loading_icon = document.querySelector("#loading");
 const loading_arrow = document.querySelector("svg > symbol#loading > g");
 
 const done_icon = document.querySelector("#done");
+
+const svg_el = document.querySelector("svg");
+
+svg_el.style.display = "none";
 
 button.addEventListener("click", clickHandler);
 
@@ -24,9 +30,11 @@ function clickHandler() {
   setTimeout(() => {
     button.style.animation = "none";
     hit.remove();
+
+    svg_el.style.display = "inline";
     div_button.className = "downloading";
     span_button.textContent = "Loading";
-    span_button.style.left = "7rem";
+
     loading_icon.style.display = "inline";
     loading_arrow.style.animation = "loading-arrow 1s ease-in-out infinite";
     span_button.style.color = "#ffffff";
@@ -35,16 +43,20 @@ function clickHandler() {
   setTimeout(() => {
     loading_icon.style.display = "none";
     div_button.classList.remove("downloading");
-    div_button.className = "done";
 
+    div_button_first.style.width = "40%";
+    div_button.className = "done";
     span_button.textContent = "Done";
     span_button.style.color = "#ffffff";
+    done_icon.style.display = "inline";
   }, 3700);
 
   setTimeout(() => {
+    done_icon.style.display = "none";
     div_button.classList.remove("done");
 
+    div_button_first.style.width = "50%";
     span_button.textContent = "Download";
     span_button.style.color = "#000000";
-  }, 8000);
+  }, 7000);
 }
