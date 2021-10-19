@@ -89,8 +89,8 @@ span {
 
 #loading {
   position: absolute;
-  visibility: hidden;
-  /* left: -2rem; */
+  display: none;
+  stroke: var(--white);
 }
 
 @keyframes bounce-button {
@@ -155,10 +155,29 @@ span {
   }
 }
 
+@keyframes loading-arrow {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    transform: translateY(0.1rem);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(0.15rem);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(0.1rem);
+    opacity: 0.2;
+  }
+}
+
 svg {
   position: absolute;
   width: 2.1rem;
   left: 4.3rem;
+  z-index: 2;
   /* padding-right: 0.4rem; */
   /* visibility: hidden; */
 }
