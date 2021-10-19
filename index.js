@@ -31,6 +31,7 @@ function clickHandler() {
     button.style.animation = "none";
     hit.remove();
 
+    div_button_first.style.width = "50%";
     svg_el.style.display = "inline";
     div_button.className = "downloading";
     span_button.textContent = "Loading";
@@ -55,7 +56,6 @@ function clickHandler() {
     done_icon.style.display = "none";
     div_button.classList.remove("done");
 
-    div_button_first.style.width = "50%";
     span_button.textContent = "Download";
     span_button.style.color = "#000000";
   }, 7000);
