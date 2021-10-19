@@ -201,7 +201,7 @@ svg {
   }
   50% {
     transform: translateY(0.15rem);
-    opacity: 0.5;
+    opacity: 0.6;
   }
   75% {
     transform: translateY(0.1rem);
