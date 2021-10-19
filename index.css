@@ -110,7 +110,13 @@ svg {
 
 #done {
   stroke: var(--white);
-  fill: var(--white);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: done-icon 3s linear forwards;
 }
 
 @keyframes bounce-button {
@@ -190,5 +196,11 @@ svg {
   75% {
     transform: translateY(0.1rem);
     opacity: 0.2;
+  }
+}
+
+@keyframes done-icon {
+  to {
+    stroke-dashoffset: 0;
   }
 }

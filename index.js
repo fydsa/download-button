@@ -50,6 +50,7 @@ function clickHandler() {
     span_button.textContent = "Done";
     span_button.style.color = "#ffffff";
     done_icon.style.display = "inline";
+    // done_icon.style.animation = "done-icon 2s linear forwards infinite";
   }, 3700);
 
   setTimeout(() => {
