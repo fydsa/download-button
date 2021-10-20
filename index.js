@@ -37,12 +37,16 @@ function clickHandler() {
     span_button.textContent = "Loading";
 
     loading_icon.style.display = "inline";
+    done_icon.style.visibility = "hidden"; //firefox issue
+    loading_icon.style.visibility = "visible";
     loading_arrow.style.animation = "loading-arrow 1s ease-in-out infinite";
     span_button.style.color = "#ffffff";
   }, 750);
 
   setTimeout(() => {
-    loading_icon.style.display = "none";
+    loading_icon.style.visibility = "hidden";
+    done_icon.style.visibility = "visible";
+    done_icon.style.display = "inline";
     div_button.classList.remove("downloading");
 
     div_button_first.style.width = "40%";
